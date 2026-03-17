@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - John Doe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Aquila Style Texture Backgrounds */
+      .aquila-bg {
+        background-color: #f4f4f4;
+        /* Subtle Paper Texture */
+        background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+      }
+      .aquila-card {
+        background-color: #ffffff;
+        /* White Diamond Texture for Cards */
+      }
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="aquila-bg text-gray-800">
+    <nav class="bg-[#373954] py-6 px-4 sticky top-0 z-50 shadow-lg">
+      <div
+        class="max-w-4xl mx-auto flex justify-center items-center text-lg md:text-xl font-bold text-white space-x-4 md:space-x-8"
+      >
+        <a href="#about" class="transition uppercase">About</a>
+        <a href="#work" class="transition uppercase">Work</a>
+
+        <a href="/" class="group px-2"> logo </a>
+
+        <a href="#skill" class="transition uppercase">Skill</a>
+        <a href="#contact" class="transition uppercase">Contact</a>
+      </div>
+    </nav>
+
+    <section
+      class="flex flex-col max-w-4xl mx-auto items-center pt-16 pb-20 justify-center text-center px-4"
+    >
+      <div
+        class="w-[160px] h-[160px] rounded-full border-[6px] p-1 border-[#373954] mb-8 shadow-2xl overflow-hidden bg-white"
+      >
+        <img
+          src="./assets/images/tanim.png"
+          alt="profile"
+          class="w-full h-full rounded-full object-cover"
+        />
+      </div>
+
+      <h1
+        class="text-2xl md:text-4xl font-bold text-[#132f7d] mb-3 tracking-tighter uppercase"
+      >
+        Hello! My Name is <span class="text-[#373954]">Md. Tanim</span>
+      </h1>
+
+      <p class="text-xl text-gray-500 mb-8 italic">
+        I'm a Professional Web Designer
+      </p>
+
+      <div
+        class="flex flex-wrap justify-center items-center gap-6 border-y border-gray-400 py-4 text-[#8c4f3e] text-sm md:text-base mb-10 w-full"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <span>mdtanim@gmail.me</span>
+        </div>
+        <div class="h-4 w-px bg-gray-400 hidden md:block"></div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-globe"></i>
+          <span>www.mdtanim.com</span>
+        </div>
+        <div class="h-4 w-px bg-gray-400 hidden md:block"></div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i>
+          <span>+88017 28 445566</span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="bg-white/40 py-16 px-4 font-sans border-y border-gray-200"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div
+          class="mb-12 border-b border-gray-100 pb-10 text-center md:text-left"
+        >
+          <h4 class="text-orange-700 font-semibold uppercase text-xs mb-2">
+            Who I Am
+          </h4>
+          <h2 class="text-4xl font-bold text-slate-800 mb-6 uppercase">
+            About Me
+          </h2>
+          <p class="text-gray-600 text-lg italic">
+            I am a passionate learner and aspiring developer. Currently, I am a
+            new student of the
+            <span class="font-bold text-slate-800 underline"
+              >Programming Hero Free Ramadan Special Bootcamp</span
+            >, diving deep into the world of Web Development.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="aquila-card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
+          >
+            <div class="text-slate-800 mb-4 text-2xl">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3
+              class="font-bold text-slate-800 mb-3 uppercase tracking-widest text-xs border-b pb-2"
+            >
+              Learning Journey
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed italic">
+              Mastering HTML, CSS, and JavaScript during this holy month.
+            </p>
+          </div>
+          <div
+            class="aquila-card p-6 rounded-sm border-t-4 border-orange-700 shadow-sm duration-300"
+          >
+            <div class="text-orange-700 mb-4 text-2xl">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <h3
+              class="font-bold text-slate-800 mb-3 uppercase tracking-widest text-xs border-b pb-2"
+            >
+              Active Projects
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed italic">
+              Working on Infinity Math Center and Qrinux Inc.
+            </p>
+          </div>
+          <div
+            class="aquila-card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
+          >
+            <div class="text-slate-800 mb-4 text-2xl">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3
+              class="font-bold text-slate-800 mb-3 uppercase tracking-widest text-xs border-b pb-2"
+            >
+              Interests
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed italic">
+              Focused on UI/UX design and logical problem solving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="py-16 px-4 font-sans">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-slate-800 uppercase mb-12">
+          My Technical Skills
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-10 h-10 mb-2"
+              alt="HTML5"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >HTML5</span
+            >
+          </div>
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-10 h-10 mb-2"
+              alt="CSS3"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >CSS3</span
+            >
+          </div>
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              class="w-10 h-10 mb-2"
+              alt="Tailwind"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >Tailwind</span
+            >
+          </div>
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-10 h-10 mb-2"
+              alt="JS"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >JavaScript</span
+            >
+          </div>
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="w-10 h-10 mb-2"
+              alt="GitHub"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >GitHub</span
+            >
+          </div>
+          <div
+            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              class="w-10 h-10 mb-2"
+              alt="Next.js"
+            />
+            <span class="text-[10px] font-bold uppercase tracking-tighter"
+              >Next.js</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- top -->
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-slate-800 uppercase mb-4">
+            Contact Me
+          </h2>
+          <p class="text-gray-500 text-sm max-w-xl mx-auto italic">
+            Just say Hello! I will respond within one business day.
+          </p>
+        </div>
+        <!-- link -->
+        <div
+          class="flex justify-center space-x-4 mb-10 border-y border-gray-300 py-4 max-w-sm mx-auto"
+        >
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full border bg-white flex items-center justify-center text-gray-700 hover:bg-[#373954] hover:text-white transition shadow-md"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full border bg-white flex items-center justify-center text-gray-700 hover:bg-[#373954] hover:text-white transition shadow-md"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full border bg-white flex items-center justify-center text-gray-700 hover:bg-[#373954] hover:text-white transition shadow-md"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full border bg-white flex items-center justify-center text-gray-700 hover:bg-[#373954] hover:text-white transition shadow-md"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <!-- form -->
+        <form
+          action="https://formspree.io/f/your_id"
+          method="POST"
+          class="space-y-6"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 shadow border border-gray-100">
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase mb-2"
+                >Name*</label
+              >
+              <input
+                name="name"
+                type="text"
+                class="w-full bg-gray-50 border p-3 focus:outline-none focus:border-slate-500"
+                required
+              />
+            </div>
+
+            <div class="bg-white p-4 shadow border border-gray-100">
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase mb-2"
+                >E-Mail*</label
+              >
+              <input
+                name="email"
+                type="email"
+                class="w-full bg-gray-50 border p-3 focus:outline-none focus:border-slate-500"
+                required
+              />
+            </div>
+
+            <div class="bg-white p-4 shadow border border-gray-100">
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase mb-2"
+                >Phone</label
+              >
+              <input
+                name="phone"
+                type="tel"
+                class="w-full bg-gray-50 border p-3 focus:outline-none focus:border-slate-500"
+              />
+            </div>
+          </div>
+
+          <div class="bg-white p-4 shadow border border-gray-100">
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2"
+              >Subject</label
+            >
+            <input
+              name="subject"
+              type="text"
+              class="w-full bg-gray-50 border p-3 focus:outline-none focus:border-slate-500"
+            />
+          </div>
+
+          <div class="bg-white p-4 shadow border border-gray-100">
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2"
+              >Message</label
+            >
+            <textarea
+              name="message"
+              rows="4"
+              class="w-full bg-gray-50 border p-3 focus:outline-none focus:border-slate-500"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-[#3b3f5c] text-white px-12 py-3 font-bold uppercase tracking-widest hover:bg-slate-700 transition shadow-lg"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-4 border-t border-gray-300 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] text-gray-500"
+        >
+          <div>
+            <span class="font-bold text-[#2d3448]">Address:</span> Moulvibazar,
+            Sylhet, BD
+          </div>
+          <div>
+            <span class="font-bold text-[#2d3448]">Mail:</span>
+            <a
+              href="mailto:john.doe@myname.me"
+              class="text-orange-700 hover:underline"
+              >mdtanim@gmail.me</a
+            >
+          </div>
+          <div>
+            <span class="font-bold text-[#2d3448]">Phone:</span> +880 17 28
+            445566
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+  </body>
+</html>
