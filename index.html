@@ -11,12 +11,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Aquila Style Texture Backgrounds */
-      .aquila-bg {
-        background-color: #f4f4f4;
-        /* Subtle Paper Texture */
-        background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+      .bg {
+        background-image: url("./assets/images/dot.png");
       }
-      .aquila-card {
+      .card {
         background-color: #ffffff;
         /* White Diamond Texture for Cards */
       }
@@ -26,67 +24,84 @@
       }
     </style>
   </head>
-  <body class="aquila-bg text-gray-800">
-    <nav class="bg-[#373954] py-6 px-4 sticky top-0 z-50 shadow-lg">
+  <body class="bg text-gray-800">
+    <!-- navber -->
+    <nav class="bg-[#373954] py-6 px-4 sticky top-0 z-50 shadow-sm">
       <div
-        class="max-w-4xl mx-auto flex justify-center items-center text-lg md:text-xl font-bold text-white space-x-4 md:space-x-8"
+        class="max-w-4xl mx-auto flex justify-center items-center text-xl md:text-2xl text-white space-x-6 md:space-x-12"
       >
-        <a href="#about" class="transition uppercase">About</a>
-        <a href="#work" class="transition uppercase">Work</a>
+        <a href="#about" class="transition hover:text-gray-400" title="About">
+          <i class="fa-solid fa-user"></i>
+        </a>
 
-        <a href="/" class="group px-2"> logo </a>
+        <a href="#work" class="transition hover:text-gray-400" title="Work">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
 
-        <a href="#skill" class="transition uppercase">Skill</a>
-        <a href="#contact" class="transition uppercase">Contact</a>
+        <a href="/" class="group px-2 text-2xl">
+          <i class="fa-solid fa-rocket animate-bounce text-blue-400"></i>
+        </a>
+
+        <a href="#skill" class="transition hover:text-gray-400" title="Skills">
+          <i class="fa-solid fa-code"></i>
+        </a>
+
+        <a
+          href="#contact"
+          class="transition hover:text-gray-400"
+          title="Contact"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </nav>
-
-    <section
-      class="flex flex-col max-w-4xl mx-auto items-center pt-16 pb-20 justify-center text-center px-4"
+    <!-- banner -->
+    <main
+      class="bg bg-[#e3f2fc] shadow-sm border-b-2 border-dashed border-gray-400"
     >
-      <div
-        class="w-[160px] h-[160px] rounded-full border-[6px] p-1 border-[#373954] mb-8 shadow-2xl overflow-hidden bg-white"
+      <section
+        class="flex flex-col max-w-4xl mx-auto items-center pt-16 pb-20 justify-center text-center px-4"
       >
-        <img
-          src="./assets/images/tanim.png"
-          alt="profile"
-          class="w-full h-full rounded-full object-cover"
-        />
-      </div>
-
-      <h1
-        class="text-2xl md:text-4xl font-bold text-[#132f7d] mb-3 tracking-tighter uppercase"
-      >
-        Hello! My Name is <span class="text-[#373954]">Md. Tanim</span>
-      </h1>
-
-      <p class="text-xl text-gray-500 mb-8 italic">
-        I'm a Professional Web Designer
-      </p>
-
-      <div
-        class="flex flex-wrap justify-center items-center gap-6 border-y border-gray-400 py-4 text-[#8c4f3e] text-sm md:text-base mb-10 w-full"
-      >
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-envelope"></i>
-          <span>mdtanim@gmail.me</span>
+        <div
+          class="w-[160px] h-[160px] rounded-full border-[6px] p-1 border-[#373954] mb-8 shadow-sm bg-white"
+        >
+          <img
+            src="./assets/images/tanim.png"
+            alt="profile"
+            class="w-full h-full rounded-full"
+          />
         </div>
-        <div class="h-4 w-px bg-gray-400 hidden md:block"></div>
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-globe"></i>
-          <span>www.mdtanim.com</span>
-        </div>
-        <div class="h-4 w-px bg-gray-400 hidden md:block"></div>
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-phone"></i>
-          <span>+88017 28 445566</span>
-        </div>
-      </div>
-    </section>
+        <h1
+          class="text-2xl md:text-4xl font-bold text-[#132f7d] mb-3 uppercase"
+        >
+          Hello! My Name is <span class="text-[#373954]">Md. Tanim</span>
+        </h1>
+        <p class="text-xl text-gray-500 mb-8 italic">
+          I'm a Professional Web Designer
+        </p>
 
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 border-y border-gray-400 py-4 text-[#8c4f3e] text-sm md:text-base mb-10 w-full"
+        >
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <span>mdtanim@gmail.me</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-globe"></i>
+            <span>www.mdtanim.com</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+88017 28 445566</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- about  -->
     <section
       id="about"
-      class="bg-white/40 py-16 px-4 font-sans border-y border-gray-200"
+      class="bg-white bg py-16 px-4 font-sans border-b-2 border-dashed border-gray-400 border-gray-200"
     >
       <div class="max-w-4xl mx-auto">
         <div
@@ -100,7 +115,7 @@
           </h2>
           <p class="text-gray-600 text-lg italic">
             I am a passionate learner and aspiring developer. Currently, I am a
-            new student of the
+            student of the
             <span class="font-bold text-slate-800 underline"
               >Programming Hero Free Ramadan Special Bootcamp</span
             >, diving deep into the world of Web Development.
@@ -109,7 +124,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
-            class="aquila-card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
+            class="card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
           >
             <div class="text-slate-800 mb-4 text-2xl">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -124,7 +139,7 @@
             </p>
           </div>
           <div
-            class="aquila-card p-6 rounded-sm border-t-4 border-orange-700 shadow-sm duration-300"
+            class="card p-6 rounded-sm border-t-4 border-orange-700 shadow-sm duration-300"
           >
             <div class="text-orange-700 mb-4 text-2xl">
               <i class="fa-solid fa-code-branch"></i>
@@ -135,11 +150,11 @@
               Active Projects
             </h3>
             <p class="text-xs text-gray-500 leading-relaxed italic">
-              Working on Infinity Math Center and Qrinux Inc.
+              Working on Parrots Academy and Nexlearn Ltd.
             </p>
           </div>
           <div
-            class="aquila-card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
+            class="card p-6 rounded-sm border-t-4 border-slate-800 shadow-sm duration-300"
           >
             <div class="text-slate-800 mb-4 text-2xl">
               <i class="fa-solid fa-lightbulb"></i>
@@ -156,89 +171,220 @@
         </div>
       </div>
     </section>
+    <!-- stack -->
+    <section
+      id="skill"
+      class="py-16 bg px-4 bg-[#f8f8f8] shadow-sm border-b-2 border-dashed border-gray-400"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-12 text-center">
+          <h2
+            class="text-3xl font-bold text-slate-800 uppercase tracking-tight"
+          >
+            Technical Skills
+          </h2>
+          <p class="text-gray-500 mt-2">
+            Technologies I use to build modern web applications.
+          </p>
+        </div>
 
-    <section id="skill" class="py-16 px-4 font-sans">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-slate-800 uppercase mb-12">
-          My Technical Skills
-        </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              class="w-10 h-10 mb-2"
-              alt="HTML5"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >HTML5</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/html5.svg"
+                class="w-10 h-10"
+                alt="HTML5"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">HTML5</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Stucture এবং semantic web layouts design করার জন্য ব্যবহার করি।
+            </p>
           </div>
+
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              class="w-10 h-10 mb-2"
-              alt="CSS3"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >CSS3</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/css3.svg"
+                class="w-10 h-10"
+                alt="CSS3"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">CSS3</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Modern styling, animations এবং responsive design নিশ্চিত করি।
+            </p>
           </div>
+
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-              class="w-10 h-10 mb-2"
-              alt="Tailwind"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >Tailwind</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/tailwindcss.svg"
+                class="w-10 h-10"
+                alt="Tailwind"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">Tailwind</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Utility-first approach ব্যবহার করে দ্রুত UI তৈরি করতে পারি।
+            </p>
           </div>
+
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              class="w-10 h-10 mb-2"
-              alt="JS"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >JavaScript</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/javascript.svg"
+                class="w-10 h-10"
+                alt="JS"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">JavaScript</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Interactive features এবং dynamic functionality যোগ করার জন্য দক্ষ।
+            </p>
           </div>
+
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              class="w-10 h-10 mb-2"
-              alt="GitHub"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >GitHub</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/github.svg"
+                class="w-10 h-10"
+                alt="GitHub"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">GitHub</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Version control এবং team collaboration-এর জন্য ব্যবহার করি।
+            </p>
           </div>
+
           <div
-            class="aquila-card p-4 shadow-sm border border-gray-200 flex flex-col items-center hover:scale-105 transition"
+            class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md bg-white"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              class="w-10 h-10 mb-2"
-              alt="Next.js"
-            />
-            <span class="text-[10px] font-bold uppercase tracking-tighter"
-              >Next.js</span
-            >
+            <div class="flex items-center space-x-4 mb-3">
+              <img
+                src="./assets/images/nextjs.svg"
+                class="w-10 h-10"
+                alt="Next.js"
+              />
+              <h3 class="font-bold text-slate-800 uppercase">Next.js</h3>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              SEO friendly এবং fast-performance React apps তৈরি করি।
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <!-- work  -->
+    <section
+      id="work"
+      class="bg py-16 px-4 bg-[#180505] shadow-sm border-b-2 border-dashed border-gray-400 font-sans"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-white uppercase">My Work</h2>
+        </div>
 
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="bg-white p-3 shadow-sm border border-gray-200 flex flex-col items-center"
+          >
+            <div class="w-full bg-gray-100 mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=400&h=400&fit=crop"
+                alt="Web Design"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-center pb-2">
+              <i class="fa-solid fa-camera text-slate-500 text-xl mb-1"></i>
+              <h3 class="text-xs font-bold text-slate-700 leading-tight">
+                Web Design
+              </h3>
+              <a href="#" class="text-[10px] text-orange-700 font-medium"
+                >www.viewlive.com</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-3 shadow-sm border border-gray-200 flex flex-col items-center"
+          >
+            <div class="w-full bg-gray-100 mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=400&h=400&fit=crop"
+                alt="Logo Design"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-center pb-2">
+              <i class="fa-solid fa-camera text-slate-500 text-xl mb-1"></i>
+              <h3 class="text-xs font-bold text-slate-700 leading-tight">
+                Logo Design
+              </h3>
+              <a href="#" class="text-[10px] text-orange-700 font-medium"
+                >www.viewlive.com</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-3 shadow-sm border border-gray-200 flex flex-col items-center"
+          >
+            <div class="w-full bg-gray-100 mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=400&h=400&fit=crop"
+                alt="Web Design"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-center pb-2">
+              <i class="fa-solid fa-camera text-slate-500 text-xl mb-1"></i>
+              <h3 class="text-xs font-bold text-slate-700 leading-tight">
+                UI/UX Design
+              </h3>
+              <a href="#" class="text-[10px] text-orange-700 font-medium"
+                >www.viewlive.com</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-3 shadow-sm border border-gray-200 flex flex-col items-center"
+          >
+            <div class="w-full bg-gray-100 mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=400&h=400&fit=crop"
+                alt="Video Editor"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="text-center pb-2">
+              <i class="fa-solid fa-video text-slate-500 text-xl mb-1"></i>
+              <h3 class="text-xs font-bold text-slate-700 leading-tight">
+                Video Editor
+              </h3>
+              <a href="#" class="text-[10px] text-orange-700 font-medium"
+                >www.viewlive.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
     <section id="contact" class="py-16 px-4">
       <div class="max-w-4xl mx-auto">
         <!-- top -->
@@ -353,7 +499,7 @@
         </form>
       </div>
     </section>
-
+    <!-- footer -->
     <footer class="py-4 border-t border-gray-300 bg-white">
       <div class="max-w-4xl mx-auto px-4">
         <div
@@ -376,7 +522,6 @@
             445566
           </div>
         </div>
-       
       </div>
     </footer>
   </body>
